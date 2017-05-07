@@ -48,7 +48,9 @@ function importFactories(info, tab) {
 function loadMenu(factories) {
   chrome.contextMenus.removeAll(function() {
     // Create menu items
-    var parent = chrome.contextMenus.create({"title": "Laravel TestTools", "contexts":["all"]});
+    var parent = chrome.contextMenus.create({
+      "title": "Laravel TestTools", "contexts":["all"]
+    });
 
     chrome.contextMenus.create({
       "title": "Import factories",
@@ -64,25 +66,25 @@ function loadMenu(factories) {
     });
 
     chrome.contextMenus.create({
-      "title": "Visit URL",
+      "title": "زيارة رابط",
       "parentId": parent,
       "contexts":["all"],
       "onclick": visit
     });
     chrome.contextMenus.create({
-      "title": "See Page is...",
+      "title": "رؤية الصفحة بصفة ...",
       "parentId": parent,
       "contexts":["all"],
       "onclick": seePageIs
     });
     chrome.contextMenus.create({
-      "title": "See text",
+      "title": "رؤية النص",
       "parentId": parent,
       "contexts":["selection"],
       "onclick": seeText
     });
     chrome.contextMenus.create({
-      "title": "Press",
+      "title": "ضغط",
       "parentId": parent,
       "contexts":["all"],
       "onclick": press
@@ -136,11 +138,11 @@ function loadMenu(factories) {
     });
 
     var availableFaker = [
-      { type: "email", name: "Email" },
-      { type: "name", name: "Name" },
-      { type: "firstname", name: "Firstname" },
-      { type: "word", name: "Word" },
-      { type: "url", name: "URL" },
+      { type: "email", name: "بريد إلكتروني" },
+      { type: "name", name: "اسم كامل" },
+      { type: "firstname", name: "اسم" },
+      { type: "word", name: "كلمة" },
+      { type: "url", name: "عنوان صفحة واب" },
     ];
 
     availableFaker.forEach(function(fakerData){

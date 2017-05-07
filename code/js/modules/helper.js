@@ -6,5 +6,6 @@ exports.ucfirst = function(str) {
 };
 
 exports.addslashes = function( str ) {
-    return (str + '').replace(/[\\"']/g, '\\$&').replace(/\u0000/g, '\\0');
+    return (str + '').replace(/[\\"']/g, '\\$&')
+                     .replace(/\u0000/g, '\\0');
 };
