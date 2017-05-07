@@ -132,7 +132,7 @@ function loadMenu(factories) {
     }
 
     var fakerMenu = chrome.contextMenus.create({
-      "title": "Faker",
+      "title": "مُقَلِّـد",
       "parentId": parent,
       "contexts":["all"]
     });
