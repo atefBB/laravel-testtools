@@ -49,11 +49,11 @@ function loadMenu(factories) {
   chrome.contextMenus.removeAll(function() {
     // Create menu items
     var parent = chrome.contextMenus.create({
-      "title": "Laravel TestTools", "contexts":["all"]
+      "title": "أدوات اختبار لارافال", "contexts":["all"]
     });
 
     chrome.contextMenus.create({
-      "title": "Import factories",
+      "title": "تحميل مصانع",
       "parentId": parent,
       "contexts":["all"],
       "onclick": importFactories
@@ -92,7 +92,7 @@ function loadMenu(factories) {
 
     if (factories) {
       var factoryMenu = chrome.contextMenus.create({
-        "title": "Factories",
+        "title": "معامل",
         "parentId": parent,
         "contexts":["all"]
       });
