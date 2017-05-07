@@ -5,7 +5,7 @@
   "dependencies": {},
   "devDependencies": {
     "browserify": "^13.0.0",
-    "faker": "^3.1.0",
+    "faker": "atefBB/faker.js",
     "grunt": "*",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-clean": "^1.0.0",
