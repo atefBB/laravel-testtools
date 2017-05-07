@@ -1,10 +1,10 @@
 var helper = require('./modules/helper'),
-    faker = require('faker/locale/en_US'),
+    faker = require('faker/locale/ar'),
     $ = require('jquery'),
     hljs = require('./libs/highlight'),
     Vue = require('vue');
     Vue.config.devtools = false;
-    
+
 hljs.registerLanguage('php', require('./libs/languages/php'));
 
 var indent = "    ";

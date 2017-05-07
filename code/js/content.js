@@ -1,8 +1,8 @@
 var $ = require('jquery'),
-    faker = require('faker/locale/en_US'),
+    faker = require('faker/locale/ar'),
     Vue = require('vue');
     Vue.config.devtools = false;
-    
+
 var App = new Vue({
 
     data: {
